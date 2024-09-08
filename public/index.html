@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+
+    <style>
+        .blurr-effect{
+            filter: blur(1.5px);
+        }
+    </style>
+</head>
+<body class="w-full h-full bg-customDarkBlue overflow-x-hidden box-border">
+    <script defer src="./index.js"></script>
+    <div class="loader absolute w-full h-full flex-col justify-center items-center z-10 hidden">
+        <img src="./image/Github.gif" alt="" srcset="" class="w-[150px] h-[150px]">
+        <p class="text-white font-mono text-lg">please wait...</p>
+    </div>
+    <div class="holder">
+        <header class="w-full h-[80px] flex justify-between items-center bg-customDarkBlue p-2 
+    text-white pr-[40px] pl-[60px] sm:place-items-center sm:pr-[157px] sm:pl-[95px]">
+
+    <div class="name text-2xl font-bold font-sans flex"><p class="text-blue-600">Git</p>Desk</div>
+
+    </header>
+
+    <section class="h-screen w-screen flex justify-center items-start">
+        <button class="text-white mt-40 w-40 h-12 bg-green-700 rounded-lg font-mono font-bold text-base" id="btn">
+            Login with github
+        </button>
+    </section>
+    </div>  
+</body>
+</html>
