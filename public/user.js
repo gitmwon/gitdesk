@@ -92,6 +92,7 @@ async function searchData(name){
       return res.json();
     })
     .then(async(data) => {
+      console.log(data);
       if(data.message){
         let cardholder = document.querySelector(".cardholder");
         let leftside = document.querySelector(".leftside");
