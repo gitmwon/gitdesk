@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 8080;
+const PORT = 10000;
 const clientID = "Ov23li7KxiILIkmUk1rj";
 const client_secret = "11e703d1af546d1112d4def8b4310fd1898ded6d";
 const userRouter = require('./routes/route.js');
@@ -62,6 +62,7 @@ app.post("/searchData",async(req,res)=>{
 })
 
 
-app.listen(PORT,()=>{
-    console.log(`server running on localhost ${PORT}`);
-})
+const exserver = app.listen(PORT, "0.0.0.0", () => {
+    console.log(`server started at port ${PORT}`);
+  });
+  
