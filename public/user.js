@@ -1,5 +1,5 @@
 import{assignData,assignRepoData,assignFollowerData,assignFollowingData,assignforkedData} from "./data.js";
-let userURL = "https://gitdesk.onrender.com//userData";
+let userURL = "https://gitdesk.onrender.com/userData";
 async function fetchData(user) {
   return await fetch(user, {
     method: "GET",
@@ -110,7 +110,7 @@ async function searchData(name){
 
 document.getElementById("logout").addEventListener("click",()=>{
   localStorage.removeItem("accessToken");
-  window.location.href="http://localhost:8080/";
+  window.location.href="https://gitdesk.onrender.com/";
 })
 
 document.querySelector(".searchbtn").addEventListener("click", async () => {
