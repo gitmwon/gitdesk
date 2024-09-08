@@ -99,6 +99,7 @@ async function searchData(name){
         //leftside.innerHTML = "";
       }else{
         let newurl = new URL(window.location.href);
+        console.log(newurl);
         const repoData = await fetch(data.repos_url).then((res) => res.json());
         newurl.searchParams.set('search',name);
         window.history.pushState({},"",newurl);
