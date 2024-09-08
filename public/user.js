@@ -1,5 +1,5 @@
 import{assignData,assignRepoData,assignFollowerData,assignFollowingData,assignforkedData} from "./data.js";
-let userURL = "http://localhost:8080/userData";
+let userURL = "http://localhost:10000/userData";
 async function fetchData(user) {
   return await fetch(user, {
     method: "GET",
